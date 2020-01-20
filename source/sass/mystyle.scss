@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato.woff2") format("woff2"), url("../fonts/Lato.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  color: #4ccef0;
+  font-size: 20px;
+  font-family: 'Lato';
+  font-style: normal;
+  line-height: 1.2em;
+  margin: 5px 0 15px;
+}
+
+.form__list-label {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  cursor: text;
+  padding: 11px 15px 0;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.form__list-input {
+  border: 1px solid #E8E8E8;
+  height: 46px;
+  line-height: 1.5em;
+  font-size: 14px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+  padding: 0 15px;
+  color: rgba(0,0,0,0.5);
+  outline: none;
+  cursor: pointer;
+}
+
+.form__list-input:focus {
+  border: transparent;
+  border-bottom: 2px solid #fe6500;
+}
+
+#contact_form_add::placeholder {
+  color: rgba(0,0,0,0.5);
+}
+
+.form__list-input::placeholder {
+  color: #000000;
+}
+
+.form__list:focus .form__list-input::placeholder,
+.form__list:hover .form__list-input::placeholder {
+  opacity: 0.5;
+}
+
+
+
+.form__list {
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 14px;
+  font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+.container {
+  max-width: 300px;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 460px; } }
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    max-width: 930px; } }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1050px; } }
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .col-md-64 {
+    flex: 0 0 64.5769%;
+  }
+
+  .col-md-32 {
+    flex: 0 0 32.2884%;
+  }
+}
+
+input[type="submit"] {
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px 20px 0px 20px;
+    background-color: #FE6500;
+    height: 46px;
+}
