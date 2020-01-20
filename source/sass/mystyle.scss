@@ -51,7 +51,7 @@ input[type="radio"].visually-hidden {
   height: 46px;
   line-height: 1.5em;
   font-size: 14px;
-  font-family: 'Open Sans';
+  font-family: 'opensans';
   font-style: normal;
   font-weight: normal;
   width: 100%;
@@ -133,4 +133,8 @@ input[type="submit"] {
     padding: 0px 20px 0px 20px;
     background-color: #FE6500;
     height: 46px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
 }
